@@ -7,7 +7,7 @@ const array = [1, 11, 4, 8, 9, 12, 24, 3, 2, 7];
  *
  * @param {Array<number>} array массив поиска
  * @param {number} value искомы элемент
- * @return {number} если значение найдено возвращает индекс элемента массива, иначе -1
+ * @returns {number} если значение найдено возвращает индекс элемента массива, иначе -1
  */
 function linearSearch(array, value) {
     for (let i = 0; i < array.length; i++) {

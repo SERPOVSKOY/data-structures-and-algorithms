@@ -6,7 +6,7 @@ const array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
  *
  * @param {Array<number>} array массив поиска
  * @param {number} value искомый элемент
- * @return {number} если значение найдено возвращает индекс элемента массива, иначе -1
+ * @returns {number} если значение найдено возвращает индекс элемента массива, иначе -1
  */
 function binarySearch(array, value) {
     let left = 0;
