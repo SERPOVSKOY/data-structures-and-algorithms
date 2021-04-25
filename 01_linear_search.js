@@ -1,24 +1,21 @@
 const array = [1, 11, 4, 8, 9, 12, 24, 3, 2, 7];
-let count = 0;
 
 /**
  * Функция(алгоритм) линейного поиска элемента в массиве.
- * Она работает как с неотсортированными массивами, так и отсортированными, 
+ * Она работает как с неотсортированными массивами, так и отсортированными,
  * но для вторых существуют алгоритмы эффективнее линейного поиска.
- * 
- * @param {Array} array массив поиска
- * @param {number} sought искомы элемент
- * @return {number|null} если значение найдено возвращает индекс элемента массива, иначе null 
+ *
+ * @param {Array<number>} array массив поиска
+ * @param {number} value искомы элемент
+ * @return {number} если значение найдено возвращает индекс элемента массива, иначе -1
  */
-function linearSearch(array, sought) {
+function linearSearch(array, value) {
     for (let i = 0; i < array.length; i++) {
-        count += 1;
-        if (array[i] === sought) {
+        if (array[i] === value) {
             return i;
         }
     }
-    return null;
+    return -1;
 }
 
 console.log('Индекс', linearSearch(array, 2));
-console.log('Колличество операций', count);
